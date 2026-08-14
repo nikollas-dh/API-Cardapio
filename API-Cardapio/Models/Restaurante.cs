@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace API_Cardapio.Models;
 
@@ -22,12 +23,12 @@ public partial class Restaurante
     public int? DonoId { get; set; }
 
     public DateTime? DeletedAt { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<Cardapio> Cardapios { get; set; } = new List<Cardapio>();
-
+    [JsonIgnore]
     public virtual Cidade? Cidade { get; set; }
-
+    [JsonIgnore]
     public virtual Usuario? Dono { get; set; }
-
+    [JsonIgnore]
     public virtual TiposRestaurate? Tipo { get; set; }
 }

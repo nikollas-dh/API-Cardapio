@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace API_Cardapio.Models;
 
@@ -16,10 +17,10 @@ public partial class Usuario
     public string? Senha { get; set; }
 
     public int? PerfilId { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<ClienteCurtida> ClienteCurtida { get; set; } = new List<ClienteCurtida>();
 
     public virtual Perfi? Perfil { get; set; }
-
+    [JsonIgnore]
     public virtual ICollection<Restaurante> Restaurantes { get; set; } = new List<Restaurante>();
 }

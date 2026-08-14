@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "ContainingType": "API_Cardapio.Controllers.RestauranteController",
+    "Method": "ListarRestaurantes",
+    "RelativePath": "api/Restaurante",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Cardapio.Controllers.RestauranteController",
+    "Method": "listarRestaurantesProprietario",
+    "RelativePath": "api/Restaurante/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
