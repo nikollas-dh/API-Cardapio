@@ -20,13 +20,16 @@ namespace API_Cardapio.Controllers
             try
             {
                 var restaurantes = ct.Restaurantes.ToList();
-                //var restaurante = ct.Restaurantes.Select(r => new
-                //{
-                //    Nome= r.Nome,
-                //    Descricao= r.Descricao,
-                //    Foto= r.Foto,
-                    
-                //});
+                //var restaurantes = ct.Restaurantes
+                //             .Select(r => new
+                //             {
+                //                 r.Id,
+                //                 r.Nome,
+                //                 Foto = r.Foto.ToLowerInvariant(),
+                //                 r.Descricao,
+                //                 r.Cidade,
+                //             })
+                //             .ToList();
                 return Ok(restaurantes);
             }
             catch (Exception ex) 
