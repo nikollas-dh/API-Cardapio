@@ -34,6 +34,18 @@
         }
       }
     },
+    "/api/Curtidas": {
+      "get": {
+        "tags": [
+          "Curtidas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Restaurante": {
       "get": {
         "tags": [
@@ -191,6 +203,9 @@
   "tags": [
     {
       "name": "Cardapio"
+    },
+    {
+      "name": "Curtidas"
     },
     {
       "name": "Restaurante"

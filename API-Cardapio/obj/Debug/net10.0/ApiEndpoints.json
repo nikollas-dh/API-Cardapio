@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API_Cardapio.Controllers.CurtidasController",
+    "Method": "GetCurtidas",
+    "RelativePath": "api/Curtidas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API_Cardapio.Controllers.RestauranteController",
     "Method": "ListarRestaurantes",
     "RelativePath": "api/Restaurante",

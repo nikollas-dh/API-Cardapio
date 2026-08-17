@@ -28,7 +28,7 @@ namespace API_Cardapio.Controllers
                    c.Prato.Descricao,
                    c.Valor,
                    c.Prato.Foto,
-                   Curtidas = ct.ClienteCurtidas.Where(like=>like.IdPrato==c.PratoId).Count(),
+                   //Curtidas = ct.ClienteCurtidas.Where(like=>like.IdPrato==c.PratoId && like.).Count(),
                }).ToList();
                 if (cardapioRestaurante.Count ==0) 
                 { 
