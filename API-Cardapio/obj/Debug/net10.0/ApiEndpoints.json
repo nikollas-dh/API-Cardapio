@@ -17,12 +17,28 @@
   },
   {
     "ContainingType": "API_Cardapio.Controllers.CurtidasController",
-    "Method": "GetCurtidas",
+    "Method": "Ranking",
     "RelativePath": "api/Curtidas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_Cardapio.Controllers.CurtidasController",
+    "Method": "CurtirDescurtir",
+    "RelativePath": "api/Curtidas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "curtida",
+        "Type": "API_Cardapio.Models.ClienteCurtida",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
